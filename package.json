@@ -1,0 +1,41 @@
+{
+  "name": "fledra.dev",
+  "type": "module",
+  "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@unocss/reset": "^0.62.3",
+    "nuxt": "^3.13.1",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.248",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxtjs/i18n": "^8.5.3",
+    "@unocss/eslint-config": "^0.62.3",
+    "@unocss/nuxt": "^0.62.3",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "radix-vue": "^1.9.5",
+    "unocss": "^0.62.3",
+    "unocss-preset-animations": "^1.1.0"
+  },
+  "packageManager": "pnpm@9.10.0"
+}

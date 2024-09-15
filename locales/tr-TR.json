@@ -1,0 +1,8 @@
+{
+  "header": {
+    "hello": "Selam! Ben",
+    "whoami": "Frontend Developer, 2.0",
+    "hidden": "<buraya gizli bir şey yaz>",
+    "hoverMe": "üzerine gel!"
+  }
+}
