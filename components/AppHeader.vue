@@ -7,17 +7,22 @@
           <span block rotate="-25" pl-5 text-3 w-23>{{ $t('header.hoverMe') }}</span>
           <UnoIcon ml-10 text-10 rotate-30 class="i-ph:arrow-bend-right-down-thin" />
         </div>
-        <p
-          text-24
-          font-bold
-          text="hover:transparent"
-          bg="hover:(clip-text gradient-(to-r from-primary-700 via-accent-900 to-secondary-700))"
-          animated="~ back-in-left"
-          @mouseover="hovering = true"
-          @mouseleave="hovering = false"
-        >
-          {{ name }}
-        </p>
+        <div text-24 font-bold animated="~ back-in-left" @mouseover="hovering = true" @mouseleave="hovering = false">
+          <Transition
+            mode="out-in"
+            enter-active-class="animated animated-bounce-in animated-faster"
+            leave-active-class="animated animated-bounce-out animated-faster"
+          >
+            <p
+              v-if="hovering"
+              bg="clip-text gradient-(to-r from-primary-700 via-accent-900 to-secondary-700)"
+              color-transparent
+            >
+              Baran
+            </p>
+            <p v-else>Fledra</p>
+          </Transition>
+        </div>
         <p text-5 mt-4 mb-3 animated="~ back-in-left">
           {{ $t('header.whoami') }}
         </p>
@@ -35,7 +40,6 @@
 
 <script setup lang="ts">
 const hovering = ref(false);
-const name = computed(() => (hovering.value ? 'Baran' : 'Fledra'));
 </script>
 
 <style scoped>
