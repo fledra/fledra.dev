@@ -7,11 +7,11 @@
       cursor="pointer"
       transition="all duration-300"
       text="[.9rem]"
-      p-2
-      w-full
       font-semibold
       border-none
       rounded-md
+      p-2
+      v-bind="$attrs"
     >
       <slot name="value">
         {{ modelValue }}
