@@ -8,7 +8,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss';
-import { presetAnimations } from 'unocss-preset-animations';
+import { animatedUno as presetAnimated } from 'animated-unocss';
 
 export default defineConfig({
   presets: [
@@ -16,7 +16,7 @@ export default defineConfig({
     presetUno(),
     presetIcons(),
     presetTypography(),
-    presetAnimations({ fillMode: 'both' }),
+    presetAnimated(),
     presetWebFonts({
       extendTheme: true,
       provider: 'bunny',

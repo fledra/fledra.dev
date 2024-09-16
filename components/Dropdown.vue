@@ -20,7 +20,7 @@
 
     <DropdownMenuPortal>
       <DropdownMenuContent
-        class="data-[state=open]:(animate-in fade-in) data-[state=closed]:(animate-out fade-out)"
+        class="data-[state=open]:(animated animated-fade-in animated-faster) data-[state=closed]:(animated animated-fade-out animated-faster)"
         side="bottom"
         :side-offset="8"
         rounded-md
