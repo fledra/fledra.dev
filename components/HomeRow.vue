@@ -20,7 +20,8 @@
       color="text-900 hover:primary-400"
       transition-all
     >
-      <UnoIcon class="i-bi:chevron-right" text-6 />
+      <p v-if="props.showMore">show more</p>
+      <UnoIcon v-else class="i-bi:chevron-right" text-6 />
     </NuxtLink>
   </div>
 </template>
@@ -31,6 +32,7 @@ export interface HomeRowProps {
   description?: string;
   icon?: string;
   to?: string;
+  showMore?: boolean;
 }
 
 const props = defineProps<HomeRowProps>();
