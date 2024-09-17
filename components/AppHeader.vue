@@ -8,20 +8,22 @@
           <UnoIcon ml-10 text-10 rotate-30 class="i-ph:arrow-bend-right-down-thin" />
         </div>
         <div text-24 font-bold animated="~ back-in-left" @mouseover="hovering = true" @mouseleave="hovering = false">
-          <Transition
-            mode="out-in"
-            enter-active-class="animated animated-bounce-in animated-faster"
-            leave-active-class="animated animated-bounce-out animated-faster"
-          >
-            <p
-              v-if="hovering"
-              bg="clip-text gradient-(to-r from-primary-700 via-accent-900 to-secondary-700)"
-              color-transparent
+          <NuxtLink :to="localePath('/')" decoration-none>
+            <Transition
+              mode="out-in"
+              enter-active-class="animated animated-flip-in-x animated-duration-350"
+              leave-active-class="animated animated-flip-out-y animated-duration-350"
             >
-              Baran
-            </p>
-            <p v-else>Fledra</p>
-          </Transition>
+              <p
+                v-if="hovering"
+                bg="clip-text gradient-(to-r from-primary-700 via-accent-900 to-secondary-700)"
+                color-transparent
+              >
+                Baran
+              </p>
+              <p v-else color-text-900>Fledra</p>
+            </Transition>
+          </NuxtLink>
         </div>
         <p text-5 mt-4 mb-3 animated="~ back-in-left">
           {{ $t('header.whoami') }}
@@ -39,6 +41,7 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
 const hovering = ref(false);
 </script>
 
@@ -65,6 +68,6 @@ header::after {
     calc(100% - var(--edge-bevel) - var(--edge-width)) 100%
   );
 
-  --at-apply: bg-primary-300;
+  --at-apply: bg-primary-100;
 }
 </style>

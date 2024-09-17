@@ -57,7 +57,7 @@ export default defineNuxtConfig({
       compositionOnly: true,
     },
     types: 'composition',
-    strategy: 'no_prefix',
+    strategy: 'prefix_and_default',
     langDir: 'locales',
     defaultDirection: 'ltr',
     defaultLocale: 'en-US',
