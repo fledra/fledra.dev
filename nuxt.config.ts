@@ -57,10 +57,10 @@ export default defineNuxtConfig({
       compositionOnly: true,
     },
     types: 'composition',
-    strategy: 'prefix_and_default',
+    strategy: 'prefix',
     langDir: 'locales',
     defaultDirection: 'ltr',
-    defaultLocale: 'en-US',
+    defaultLocale: 'en',
     locales: [
       {
         code: 'en',
