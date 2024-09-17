@@ -11,7 +11,15 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ['@nuxt/eslint', '@unocss/nuxt', 'radix-vue/nuxt', '@nuxtjs/color-mode', '@nuxtjs/i18n', '@nuxt/image'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@nuxtjs/i18n',
+    '@nuxtjs/color-mode',
+    '@unocss/nuxt',
+    'radix-vue/nuxt',
+  ],
 
   css: [
     '@unocss/reset/normalize.css',
