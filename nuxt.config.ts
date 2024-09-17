@@ -63,13 +63,15 @@ export default defineNuxtConfig({
     defaultLocale: 'en-US',
     locales: [
       {
-        code: 'en-US',
+        code: 'en',
+        selector: 'EN-US',
         language: 'en-US',
         name: 'English (US)',
         file: 'en-US.json',
       },
       {
         code: 'tr',
+        selector: 'TR',
         language: 'tr-TR',
         name: 'Türkçe',
         file: 'tr-TR.json',
