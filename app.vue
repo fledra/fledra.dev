@@ -1,8 +1,8 @@
 <template>
-  <div flex bg-background-default color-text-default>
+  <div flex bg-background-default color-text-default h-dvh overflow-hidden>
     <ConfigProvider :use-id="useIdFn">
       <AppHeader />
-      <main flex flex-grow-1 overflow-y-auto>
+      <main flex-grow-1 overflow-y-auto>
         <NuxtPage />
       </main>
     </ConfigProvider>

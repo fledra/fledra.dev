@@ -5,8 +5,3 @@ html,
 body {
   --at-apply: font-sans;
 }
-
-html,
-body {
-  --at-apply: overflow-hidden;
-}
