@@ -36,12 +36,16 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'ipx',
+    provider: 'cloudinary',
     dir: 'public/images',
+    format: ['webp', 'png', 'jpg'],
     ipx: {
       sharpOptions: {
         limitInputPixels: 1577536,
       },
+    },
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dpkllrqps/image/upload/',
     },
   },
 
