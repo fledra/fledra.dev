@@ -1,13 +1,13 @@
 <template>
   <div flex="~ col" h-full justify-between>
     <HomeRow
-      title="Projects"
       icon="i-logos:web-dev-icon?mask text-4"
+      :title="$t('projects.title')"
       :to="localePath('/projects')"
       :show-more="projects.length > 3"
       py-2
     />
-    <template v-if="projects">
+    <template v-if="projects.length > 0">
       <HomeRow
         v-for="item in projects.slice(0, 3)"
         :key="item.title"
@@ -15,11 +15,11 @@
         :description="item.description"
       />
     </template>
-    <HomeRow v-else title="No projects yet!" />
+    <HomeRow v-else :title="$t('notYet', $t('project', 2))" />
 
     <HomeRow
-      title="Articles"
       icon="i-gravity-ui:square-article"
+      :title="$t('articles.title')"
       :to="localePath('/articles')"
       :show-more="articles.length > 3"
       py-2
@@ -32,12 +32,12 @@
         :description="item.description"
       />
     </template>
-    <HomeRow v-else title="No articles yet!" />
+    <HomeRow v-else :title="$t('notYet', { what: $t('article', 2) })" />
 
-    <HomeRow title="Photobooth" icon="i-ion:md-aperture" py-2 />
-    <HomeRow title="No photos yet!" />
+    <HomeRow :title="$t('photos.title')" icon="i-ion:md-aperture" py-2 />
+    <HomeRow :title="$t('notYet', { what: $t('photo', 2) })" />
 
-    <HomeRow title="About" icon="i-cib:about-me" :to="localePath('/about')" border-b-none />
+    <HomeRow :title="$t('aboutMe')" icon="i-cib:about-me" :to="localePath('/about')" border-b-none />
   </div>
 </template>
 

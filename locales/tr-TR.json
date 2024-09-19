@@ -1,8 +1,27 @@
 {
+  "project": "proje",
+  "article": "yazı",
+  "photo": "fotoğraf",
+  "aboutMe": "Kimdir? Nedir?",
+  "showMore": "Daha fazla",
+  "notYet": "Henüz hiç {what} yok!",
+
   "header": {
     "hello": "Selam! Ben",
     "whoami": "Frontend Developer, 2.0",
     "hidden": "<buraya gizli bir şey yaz>",
     "hoverMe": "üzerine gel!"
+  },
+
+  "projects": {
+    "title": "Projeler"
+  },
+
+  "articles": {
+    "title": "Yazılar"
+  },
+
+  "photos": {
+    "title": "Karanlık Oda"
   }
 }
