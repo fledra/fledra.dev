@@ -3,10 +3,12 @@
     <div flex="~ col" justify-center items-center w-full h-full bg="background-50/90" backdrop-blur-lg>
       <div relative flex="~ col" w-80 mb-10>
         <p mb-2 animated="~ back-in-down">{{ $t('header.hello') }}</p>
-        <div absolute top="[-0.6rem]" right="[-1.2rem]" color-text-300 animated="~ flip-in-x delay-1000">
-          <span block rotate="-25" pl-5 text-3 w-23>{{ $t('header.hoverMe') }}</span>
+
+        <div absolute top="[-1rem]" right="[-1rem]" color-text-300 animated="~ flip-in-x delay-1000">
+          <span block rotate="-25" pl-5 text-3>{{ $t('header.hoverMe') }}</span>
           <UnoIcon ml-10 text-10 rotate-30 class="i-ph:arrow-bend-right-down-thin" />
         </div>
+
         <div text-24 font-bold animated="~ back-in-left" @mouseover="hovering = true" @mouseleave="hovering = false">
           <NuxtLink :to="localePath('/')" decoration-none>
             <Transition
@@ -25,13 +27,16 @@
             </Transition>
           </NuxtLink>
         </div>
-        <p text-5 mt-4 mb-3 animated="~ back-in-left">
+
+        <p text-5 my-3 animated="~ back-in-left">
           {{ $t('header.whoami') }}
         </p>
+
         <p text-3 color-text-200 animated="~ back-in-right">
           {{ $t('header.hidden') }}
         </p>
       </div>
+
       <div flex justify-center items-center gap-2 h-10>
         <ColorModeSwitch w-16 h-full animated="~ back-in-left" />
         <LanguageSwitch w-16 h-full animated="~ back-in-right" />
