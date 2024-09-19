@@ -21,9 +21,9 @@ export default defineConfig({
       extendTheme: true,
       provider: 'bunny',
       fonts: {
-        sans: 'Poppins:300,400,600',
-        mono: 'Fira Mono:300,400,600',
-        code: 'Fira Code:400,600',
+        sans: 'Poppins:300,400,500,600,700',
+        mono: 'Fira Mono:300,400,700',
+        code: 'Fira Code:400,700',
       },
     }),
   ],
