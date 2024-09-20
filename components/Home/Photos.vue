@@ -1,5 +1,5 @@
 <template>
-  <Row icon="i-ion:md-aperture" :title="$t('photos.title')" :to="localePath('/photos')" />
+  <RowHeading :title="$t('photos.title')" :to="localePath('/photos')" icon="i-ion:md-aperture" />
 </template>
 
 <script setup lang="ts">

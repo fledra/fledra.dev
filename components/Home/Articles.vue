@@ -1,10 +1,5 @@
 <template>
-  <Row
-    icon="i-gravity-ui:square-article"
-    :title="$t('articles.title')"
-    :to="localePath('/articles')"
-    :show-more="articles.length > 3"
-  />
+  <RowHeading :title="$t('articles.title')" :to="localePath('/articles')" icon="i-gravity-ui:square-article" />
 
   <template v-if="articles.length > 0">
     <Row

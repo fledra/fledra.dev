@@ -1,10 +1,5 @@
 <template>
-  <Row
-    icon="i-logos:web-dev-icon?mask text-4"
-    :title="$t('projects.title')"
-    :to="localePath('/projects')"
-    :show-more="projects.length > 3"
-  />
+  <RowHeading :title="$t('projects.title')" :to="localePath('/projects')" icon="i-logos:web-dev-icon?mask text-4" />
 
   <template v-if="projects.length > 0">
     <Row
