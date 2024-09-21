@@ -20,7 +20,7 @@
         </div>
       </template>
       <template #not-found>
-        <Row :title="$t('notYet', { what: $t('project', 2) })" />
+        <Row :title="$t('notYet', { what: $t('project', 2) })" border-b-none />
       </template>
     </ContentList>
   </div>
