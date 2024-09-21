@@ -1,5 +1,5 @@
 <template>
-  <RowContainer py-7 border-b-none>
+  <RowContainer border-b-none h-30 max-h-30>
     <PaginationRoot v-model:page="page" :total="total" :sibling-count="2" :default-page="1" flex justify-center w-full>
       <PaginationList v-slot="{ items }" flex items-center gap-1>
         <PaginationFirst class="pagination-button">

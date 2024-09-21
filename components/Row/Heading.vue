@@ -1,5 +1,5 @@
 <template>
-  <RowContainer>
+  <RowContainer h-35 max-h-35>
     <component
       :is="props.to ? NuxtLink : 'div'"
       :to="props.to"
@@ -7,8 +7,9 @@
       items-center
       gap-5
       decoration-none
-      color="text-900 hover:primary-300"
+      color-text-900
       transition="~ duration-300"
+      :class="{ ' hover:color-primary-300': props.to }"
     >
       <UnoIcon v-if="props.icon" :class="iconClasses" />
       <p text-5 font-medium>{{ props.title }}</p>

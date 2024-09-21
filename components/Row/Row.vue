@@ -8,8 +8,9 @@
         items-center
         gap-5
         decoration-none
-        color="text-900 hover:primary-300"
+        color-text-900
         transition="~ duration-300"
+        :class="{ ' hover:color-primary-300': props.to }"
       >
         <UnoIcon v-if="props.icon" :class="iconClasses" />
         <p font-medium>{{ props.title }}</p>
