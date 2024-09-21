@@ -10,6 +10,7 @@
           :description="article.description"
           py-7
         />
+        <RowPagination :pagination="pagination" />
       </template>
       <template #not-found>
         <Row :title="$t('notYet', { what: $t('article', 2) })" />
@@ -19,9 +20,5 @@
 </template>
 
 <script setup lang="ts">
-const { query } = await useContentQuery();
-
-definePageMeta({
-  middleware: 'content-pagination',
-});
+const { query, pagination } = await useContentQuery();
 </script>

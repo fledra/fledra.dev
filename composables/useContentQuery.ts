@@ -2,6 +2,7 @@ import type { QueryBuilderParams } from '@nuxt/content';
 
 export default async function () {
   const route = useRoute();
+  const router = useRouter();
 
   const { data: count } = await useAsyncData(
     `${String(route.name)}-content-count`,
@@ -20,6 +21,15 @@ export default async function () {
     limit: 10,
     skip: pagination.skip,
   });
+
+  watch(
+    pagination.page,
+    () => {
+      const query = Object.assign({ ...route.query }, { page: pagination.page.value });
+      router.replace({ path: route.path, query });
+    },
+    { immediate: true },
+  );
 
   return {
     pagination,

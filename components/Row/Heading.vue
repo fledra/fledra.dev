@@ -1,5 +1,5 @@
 <template>
-  <div relative flex="~ grow-1" justify-between items-center px-7 border="b-2 solid primary-100" min-h="[72px]">
+  <RowContainer>
     <component
       :is="props.to ? NuxtLink : 'div'"
       :to="props.to"
@@ -25,7 +25,7 @@
     >
       <UnoIcon class="i-ci:more-horizontal" text-8 />
     </NuxtLink>
-  </div>
+  </RowContainer>
 </template>
 
 <script setup lang="ts">
