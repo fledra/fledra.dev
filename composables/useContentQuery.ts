@@ -1,24 +1,32 @@
 import type { QueryBuilderParams } from '@nuxt/content';
 
-export default async function () {
+interface ContentQueryOptions {
+  limit?: number | MaybeRefOrGetter<number>;
+}
+
+export default async function (options?: ContentQueryOptions) {
   const route = useRoute();
   const router = useRouter();
+
+  const limit = ref(toValue(options?.limit || 10));
 
   const { data: count } = await useAsyncData(
     `${String(route.name)}-content-count`,
     () => queryContent(route.path).count(),
-    { default: () => 0 },
+    {
+      default: () => 0,
+    },
   );
 
   const pagination = usePagination({
     page: Number.parseInt(String(route.query.page)),
-    pageSize: 10,
+    pageSize: limit,
     total: count,
   });
 
   const query: QueryBuilderParams = ref({
     path: route.path,
-    limit: 10,
+    limit: pagination.pageSize,
     skip: pagination.skip,
   });
 
@@ -32,7 +40,8 @@ export default async function () {
   );
 
   return {
-    pagination,
+    count,
     query,
+    pagination,
   };
 }
