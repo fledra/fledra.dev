@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     '@unocss/reset/normalize.css',
     '@unocss/reset/sanitize/sanitize.css',
     '@unocss/reset/sanitize/assets.css',
-    '@unocss/reset/eric-meyer.css',
     '@/styles/global.css',
   ],
 

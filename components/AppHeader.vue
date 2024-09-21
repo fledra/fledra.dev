@@ -1,10 +1,10 @@
 <template>
-  <header relative h-dvh w="2/5" bg="cover center">
+  <header relative bg="cover center">
     <div flex="~ col" justify-center items-center w-full h-full bg="background-50/90" backdrop-blur-lg>
       <div relative flex="~ col" w-80 mb-10>
-        <p mb-2 animated="~ back-in-down">{{ $t('header.hello') }}</p>
+        <p mb-3 animated="~ back-in-down">{{ $t('header.hello') }}</p>
 
-        <div absolute top="[-1rem]" right="[-1rem]" color-text-300 animated="~ flip-in-x delay-1000">
+        <div absolute top="[-0.75rem]" right="[-1rem]" color-text-300 animated="~ flip-in-x delay-1000">
           <span block rotate="-25" pl-5 text-3>{{ $t('header.hoverMe') }}</span>
           <UnoIcon ml-10 text-10 rotate-30 class="i-ph:arrow-bend-right-down-thin" />
         </div>
@@ -20,15 +20,16 @@
                 v-if="hovering"
                 bg="clip-text gradient-(to-r from-primary-700 via-accent-900 to-secondary-700)"
                 color-transparent
+                lh-none
               >
                 Baran
               </p>
-              <p v-else color-text-900>Fledra</p>
+              <p v-else color-text-900 lh-none>Fledra</p>
             </Transition>
           </NuxtLink>
         </div>
 
-        <p text-5 my-3 animated="~ back-in-left">
+        <p text-5 mt-3 mb-1 animated="~ back-in-left">
           {{ $t('header.whoami') }}
         </p>
 
