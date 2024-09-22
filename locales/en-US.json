@@ -15,7 +15,8 @@
   },
 
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "preview": "See it in action"
   },
 
   "articles": {
