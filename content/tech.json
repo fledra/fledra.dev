@@ -1,0 +1,147 @@
+{
+  "js": {
+    "name": "Javascript",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "icon": "i-vscode-icons:file-type-js-official"
+  },
+  "ts": {
+    "name": "Typescript",
+    "link": "https://www.typescriptlang.org",
+    "icon": "i-vscode-icons:file-type-typescript-official"
+  },
+  "nodejs": {
+    "name": "Node.js",
+    "link": "https://nodejs.org",
+    "icon": "i-vscode-icons:file-type-node"
+  },
+  "npm": {
+    "name": "npm",
+    "link": "https://www.npmjs.com",
+    "icon": "i-vscode-icons:file-type-npm"
+  },
+  "pnpm": {
+    "name": "pnpm",
+    "link": "https://pnpm.io",
+    "icon": "i-vscode-icons:file-type-pnpm"
+  },
+  "vue": {
+    "name": "Vue.js",
+    "link": "https://vuejs.org",
+    "icon": "i-vscode-icons:file-type-vue"
+  },
+  "nuxt": {
+    "name": "Nuxt.js",
+    "link": "https://nuxt.com",
+    "icon": "i-vscode-icons:file-type-nuxt"
+  },
+  "react": {
+    "name": "React",
+    "link": "https://reactjs.org",
+    "icon": "i-vscode-icons:file-type-reactjs"
+  },
+  "next": {
+    "name": "Next.js",
+    "link": "https://nextjs.org",
+    "icon": "i-vscode-icons:file-type-next"
+  },
+  "html": {
+    "name": "HTML",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "icon": "i-vscode-icons:file-type-html"
+  },
+  "css": {
+    "name": "CSS",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "icon": "i-vscode-icons:file-type-css"
+  },
+  "scss": {
+    "name": "Sass (SCSS)",
+    "link": "https://sass-lang.com",
+    "icon": "i-vscode-icons:file-type-scss"
+  },
+  "tailwind": {
+    "name": "Tailwind CSS",
+    "link": "https://tailwindcss.com",
+    "icon": "i-vscode-icons:file-type-tailwind"
+  },
+  "unocss": {
+    "name": "UnoCSS",
+    "link": "https://unocss.dev",
+    "icon": "i-vscode-icons:file-type-unocss"
+  },
+  "shell": {
+    "name": "Shell",
+    "link": "https://en.wikipedia.org/wiki/Shell_script",
+    "icon": "i-vscode-icons:file-type-shell"
+  },
+  "vuetify": {
+    "name": "Vuetify",
+    "link": "https://vuetifyjs.com",
+    "icon": "i-devicon:vuetify"
+  },
+  "nestjs": {
+    "name": "NestJS",
+    "link": "https://nestjs.com",
+    "icon": "i-vscode-icons:file-type-nestjs"
+  },
+  "tauri": {
+    "name": "Tauri",
+    "link": "https://tauri.app",
+    "icon": "i-vscode-icons:file-type-tauri"
+  },
+  "json": {
+    "name": "JSON",
+    "link": "https://www.json.org",
+    "icon": "i-vscode-icons:file-type-json"
+  },
+  "eslint": {
+    "name": "ESLint",
+    "link": "https://eslint.org",
+    "icon": "i-vscode-icons:file-type-eslint"
+  },
+  "cloudflare": {
+    "name": "Cloudflare",
+    "link": "https://www.cloudflare.com",
+    "icon": "i-devicon:cloudflare"
+  },
+  "vercel": {
+    "name": "Vercel",
+    "link": "https://vercel.com",
+    "icon": "i-vscode-icons:file-type-vercel"
+  },
+  "figma": {
+    "name": "Figma",
+    "link": "https://www.figma.com",
+    "icon": "i-devicon:figma"
+  },
+  "ae": {
+    "name": "Adobe After Effects",
+    "link": "https://www.adobe.com/products/aftereffects.html",
+    "icon": "i-logos:adobe-after-effects"
+  },
+  "premiere": {
+    "name": "Adobe Premiere Pro",
+    "link": "https://www.adobe.com/products/premiere.html",
+    "icon": "i-logos:adobe-premiere"
+  },
+  "illustrator": {
+    "name": "Adobe Illustrator",
+    "link": "https://www.adobe.com/products/illustrator.html",
+    "icon": "i-logos:adobe-illustrator"
+  },
+  "photoshop": {
+    "name": "Adobe Photoshop",
+    "link": "https://www.adobe.com/products/photoshop.html",
+    "icon": "i-logos:adobe-photoshop"
+  },
+  "lightroom": {
+    "name": "Adobe Lightroom",
+    "link": "https://www.adobe.com/products/photoshop-lightroom.html",
+    "icon": "i-logos:adobe-lightroom"
+  },
+  "xd": {
+    "name": "Adobe XD",
+    "link": "https://www.adobe.com/products/xd.html",
+    "icon": "i-logos:adobe-xd"
+  }
+}
