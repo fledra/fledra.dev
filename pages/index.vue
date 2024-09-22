@@ -3,7 +3,7 @@
     <HomeProjects />
     <HomeArticles />
     <HomePhotos />
-    <RowHeading :title="$t('aboutMe')" icon="i-cib:about-me" :to="localePath('/about')" border-b-none />
+    <RowHeading :title="$t('aboutMe')" icon="i-cib:about-me" :to="localePath('/about')" border="b-none" />
   </div>
 </template>
 

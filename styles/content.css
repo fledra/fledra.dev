@@ -1,0 +1,11 @@
+#content-wrapper a {
+  --at-apply: decoration-none transition transition-duration-200;
+}
+
+#content-wrapper :where(h2, h3, h4, h5, h6) a {
+  --at-apply: color-primary-900 "hover:color-primary-800";
+}
+
+#content-wrapper h1 {
+  --at-apply: flex justify-between items-center;
+}
