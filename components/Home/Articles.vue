@@ -17,7 +17,11 @@
 const localePath = useLocalePath();
 const path = localePath('/articles');
 
-const { data: articles } = await useAsyncData('home-articles', () => queryContent(path).limit(3).find(), {
-  default: () => [],
-});
+const { data: articles } = await useAsyncData(
+  'home-articles',
+  () => queryContent(path).sort({ date: -1, $numeric: true }).limit(3).find(),
+  {
+    default: () => [],
+  },
+);
 </script>

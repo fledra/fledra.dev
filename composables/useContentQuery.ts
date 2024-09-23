@@ -28,6 +28,7 @@ export default async function (options?: ContentQueryOptions) {
     path: route.path,
     limit: pagination.pageSize,
     skip: pagination.skip,
+    sort: { date: -1, $numeric: true },
   });
 
   watch(
