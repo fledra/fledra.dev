@@ -28,6 +28,14 @@ export default defineNuxtConfig({
     '@/styles/global.css',
   ],
 
+  runtimeConfig: {
+    public: {
+      mdc: {
+        useNuxtImage: true,
+      },
+    },
+  },
+
   eslint: {
     config: {
       typescript: true,

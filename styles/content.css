@@ -2,7 +2,7 @@
   --at-apply: decoration-none transition transition-duration-200;
 }
 
-#content-wrapper :where(h2, h3, h4, h5, h6) a {
+#content-wrapper :where(h2, h3, h4, h5, h6, p) a {
   --at-apply: color-primary-900 "hover:color-primary-800";
 }
 
