@@ -1,6 +1,8 @@
 ---
-title: "katagen"
-description: "An interactive CLI to generate and manage repositories for kata solutions from codewars.com"
+date: '2020-07-09'
+drafts: true
 ---
 
-just a placeholder.
+# katagen
+
+An interactive CLI to generate and manage repositories for kata solutions from codewars.com

@@ -1,6 +1,8 @@
 ---
-title: "kukka"
-description: "When visual beauty mixes with the musical one"
+date: '2019-08-19'
+draft: true
 ---
 
-just a placeholder.
+# kukka
+
+When visual beauty mixes with the musical one

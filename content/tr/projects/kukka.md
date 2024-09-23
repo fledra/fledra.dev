@@ -1,5 +1,8 @@
 ---
-title: 'kukka'
+date: '2019-08-19'
+draft: true
 ---
 
-just a placeholder.
+# kukka
+
+Görsel güzellik müzikal olanla birleştiğinde
