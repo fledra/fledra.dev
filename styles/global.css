@@ -19,10 +19,11 @@ body {
 }
 
 .nuxt-loading-indicator {
-  background: repeating-linear-gradient(
+  background: linear-gradient(
     to right,
-    rgb(var(--primary-700)) 0%,
-    rgb(var(--accent-900)) 50%,
-    rgb(var(--secondary-700)) 100%
+    rgb(var(--primary-500)) 0%,
+    rgb(var(--primary-500)) 20%,
+    rgb(var(--accent-700)) 60%,
+    rgb(var(--secondary-500)) 100%
   ) !important;
 }
