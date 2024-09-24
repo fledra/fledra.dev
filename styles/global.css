@@ -18,3 +18,12 @@ body {
   opacity: 0;
   filter: blur(0.5rem);
 }
+
+.nuxt-loading-indicator {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(var(--primary-700)) 0%,
+    rgb(var(--accent-900)) 50%,
+    rgb(var(--secondary-700)) 100%
+  ) !important;
+}
