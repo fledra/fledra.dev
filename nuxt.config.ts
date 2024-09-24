@@ -64,6 +64,7 @@ export default defineNuxtConfig({
 
   i18n: {
     lazy: true,
+    skipSettingLocaleOnNavigate: true,
     bundle: {
       compositionOnly: true,
     },

@@ -27,5 +27,5 @@
 </template>
 
 <script setup lang="ts">
-const { query, pagination } = await useContentQuery();
+const { query, pagination } = await useContentQuery({ useRoute: true });
 </script>

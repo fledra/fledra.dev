@@ -7,3 +7,14 @@ html,
 body {
   --at-apply: font-sans;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 500ms;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(0.5rem);
+}
