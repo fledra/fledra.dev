@@ -2,7 +2,6 @@
 @import url("./colors.css");
 @import url("./content.css");
 
-*,
 html,
 body {
   --at-apply: font-sans;
