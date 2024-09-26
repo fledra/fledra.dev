@@ -1,26 +1,20 @@
 <template>
   <RowHeading :title="$t('projects.title')" :to="path" icon="i-logos:web-dev-icon?mask text-4" />
 
-  <ContentList :query="query">
-    <template #default="{ list }">
-      <Row
-        v-for="project in list"
-        :key="project._id"
-        :to="project._path"
-        :title="project.title!"
-        :description="project.description"
-        py-7
-        max-h-25
-      />
-    </template>
-    <template #not-found>
-      <Row :title="$t('notYet', { what: $t('project', 2) })" border-b-none />
-    </template>
-  </ContentList>
+  <template v-if="projects.length">
+    <Row
+      v-for="project in projects"
+      :key="project._id"
+      :to="project._path"
+      :title="project.title!"
+      :description="project.description"
+      py-7
+      max-h-25
+    />
+  </template>
+  <Row v-else :title="$t('notYet', { what: $t('project', 2) })" border-b-none />
 </template>
 
 <script setup lang="ts">
-const localePath = useLocalePath();
-const path = computed(() => localePath('/projects'));
-const { query } = await useContentQuery({ path, pagination: { pageSize: 3 } });
+const { data: projects, path } = await useContentList('projects');
 </script>
