@@ -38,5 +38,5 @@ This project is basically that clock as a web app. Or site. Whatever you want to
 Because I love that clock since the first time I saw it. It's a digital clock with a twist.
 
 It shares the first place in my clocks list, which consists of 3 entries anyway, with the
-[TIX clock](https://duckduckgo.com?q=tix+clock) and the ones that are made with [Nixie tubes]((https://en.wikipedia.org/wiki/Nixie_tube)).
+[TIX clock](https://duckduckgo.com?q=tix+clock) and the ones that are made with [Nixie tubes](https://en.wikipedia.org/wiki/Nixie_tube).
 And let me tell you, I love me some Nixie tubes.
