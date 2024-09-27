@@ -1,5 +1,5 @@
 <template>
-  <RowContainer h-35 max-h-35>
+  <RowContainer h-30 max-h-30>
     <component
       :is="props.to ? NuxtLink : 'div'"
       :to="props.to"

@@ -1,9 +1,9 @@
 <template>
-  <div flex bg-background-default color-text-default h-dvh overflow-hidden>
+  <div flex="md:~" bg-background-default color-text-default md-h-dvh overflow-hidden>
     <ConfigProvider :use-id="useIdFn">
       <NuxtLoadingIndicator :height="2" />
-      <AppHeader w="2/5" h-dvh />
-      <main w="3/5" h-dvh overflow-y-auto>
+      <AppHeader w="screen md:2/5" h-md md-h-dvh />
+      <main w="screen md:3/5" md-h-dvh md-overflow-y-auto>
         <NuxtPage :transition="transition" />
       </main>
     </ConfigProvider>

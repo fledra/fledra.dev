@@ -1,5 +1,5 @@
 <template>
-  <div flex="~ col" h-full overflow-hidden>
+  <div flex="~ col" h-dvh overflow-hidden>
     <RowHeading :title="$t('articles.title')" icon="i-gravity-ui:square-article" py-10 />
 
     <ContentList :query="query">

@@ -8,6 +8,8 @@ export default {
       await nuxtApp.$i18n.waitForPendingLocaleChange();
     }
 
+    console.log(savedPosition);
+
     return savedPosition || { top: 0 };
   },
 } satisfies RouterConfig;

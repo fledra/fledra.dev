@@ -1,6 +1,6 @@
 <template>
   <RowContainer>
-    <div flex="~ col" gap-3>
+    <div flex="~ col" gap-1>
       <component
         :is="props.to ? NuxtLink : 'div'"
         :to="props.to"
@@ -16,7 +16,7 @@
         <p font-medium>{{ props.title }}</p>
       </component>
 
-      <p v-if="props.description" text-3 color-text-300>{{ props.description }}</p>
+      <p v-if="props.description" text-3 color-text-300 line-clamp-2>{{ props.description }}</p>
     </div>
 
     <NuxtLink
@@ -25,6 +25,7 @@
       flex
       items-center
       decoration-none
+      ml-4
       color="text-900 hover:primary-300"
       transition="~ duration-300"
     >

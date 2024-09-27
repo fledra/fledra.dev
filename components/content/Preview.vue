@@ -6,8 +6,10 @@
     external
     rounded-lg
     p-3
-    text-4
+    text-3
+    md-text-4
     color-text-100
+    whitespace-nowrap
     bg="primary-900 hover:primary-800"
   >
     {{ $t('projects.preview') }}

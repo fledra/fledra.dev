@@ -52,28 +52,31 @@ const hovering = ref(false);
 </script>
 
 <style scoped>
-header {
-  /* just in case i want the border to have a bevel */
-  --edge-bevel: 0rem;
-  --edge-width: 2.307px;
+@screen sm {
+  header {
+    /* just in case i want the border to have a bevel */
+    --edge-bevel: 0rem;
+    --edge-width: 2.307px;
 
-  isolation: isolate;
-  background-image: url(/images/avatar.gif);
-  clip-path: polygon(0 0, 100% 0%, calc(100% - var(--edge-bevel)) 100%, 0% 100%);
-}
+    isolation: isolate;
+    background-image: url(/images/avatar.gif);
 
-header::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  clip-path: polygon(
-    calc(100% - var(--edge-width)) 0,
-    100% 0%,
-    calc(100% - var(--edge-bevel)) 100%,
-    calc(100% - var(--edge-bevel) - var(--edge-width)) 100%
-  );
+    clip-path: polygon(0 0, 100% 0%, calc(100% - var(--edge-bevel)) 100%, 0% 100%);
+  }
 
-  --at-apply: bg-primary-100;
+  header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    clip-path: polygon(
+      calc(100% - var(--edge-width)) 0,
+      100% 0%,
+      calc(100% - var(--edge-bevel)) 100%,
+      calc(100% - var(--edge-bevel) - var(--edge-width)) 100%
+    );
+
+    --at-apply: bg-primary-100;
+  }
 }
 </style>

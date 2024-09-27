@@ -1,5 +1,5 @@
 <template>
-  <div flex gap-2 items-center py-4 font-mono>
+  <div flex gap-2 items-center py-4 font-mono text-3 md-text-4 whitespace-nowrap>
     <span color-text-400>$ more</span>
     <NuxtLink :to="base" title="cd /home" color="primary-300 hover:primary-400">~</NuxtLink>
     <span>/</span>
