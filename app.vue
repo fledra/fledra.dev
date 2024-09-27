@@ -19,7 +19,7 @@ const { finalizePendingLocaleChange } = useI18n();
 const transition: TransitionProps = {
   name: 'page',
   mode: 'out-in',
-  onBeforeEnter: async () => {
+  onAfterLeave: async () => {
     await finalizePendingLocaleChange();
   },
 };

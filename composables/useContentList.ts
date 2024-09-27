@@ -8,6 +8,7 @@ export default async function (contentPath: MaybeRefOrGetter<string>, limit: May
     () => queryContent(path.value).limit(toValue(limit)).sort({ date: -1, $numeric: true }).find(),
     {
       default: () => [],
+      watch: [locale],
     },
   );
 

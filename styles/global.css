@@ -9,7 +9,7 @@ body {
 
 .page-enter-active,
 .page-leave-active {
-  transition: all 500ms;
+  transition: all 400ms;
 }
 
 .page-enter-from,
