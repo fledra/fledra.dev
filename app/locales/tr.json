@@ -1,0 +1,32 @@
+{
+  "project": "proje",
+  "article": "yazı",
+  "photo": "fotoğraf",
+  "aboutMe": "Kimdir? Nedir?",
+  "preview": "Ben de göreyim",
+  "showMore": "Daha fazla göreyim",
+  "techStack": "Teknolojiler",
+  "ohWait": "oh wait...",
+
+  "header": {
+    "hello": "Selam! Ben",
+    "whoami": "Frontend Developer, 2.0",
+    "hidden": "<buraya gizli bir şey yaz>",
+    "hoverMe": "üzerine gel!"
+  },
+
+  "projects": {
+    "title": "Projeler",
+    "notYet": "Henüz hiç proje yok"
+  },
+
+  "articles": {
+    "title": "Yazılar",
+    "notYet": "Henüz hiç yazı yok"
+  },
+
+  "photos": {
+    "title": "Karanlık Oda",
+    "notYet": "Henüz hiç fotoğraf yok"
+  }
+}

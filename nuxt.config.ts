@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/ui'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n'],
 
   css: ['~/assets/styles/main.css'],
 
@@ -48,5 +48,36 @@ export default defineNuxtConfig({
   colorMode: {
     fallback: 'dark',
     storageKey: 'color-mode',
+  },
+
+  i18n: {
+    lazy: true,
+    restructureDir: 'app',
+    langDir: 'locales',
+    types: 'composition',
+    strategy: 'prefix',
+    defaultDirection: 'ltr',
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      redirectOn: 'root',
+      useCookie: true,
+      cookieSecure: true,
+      cookieKey: 'site_lang',
+      fallbackLocale: 'en',
+    },
+    locales: [
+      {
+        code: 'en',
+        language: 'en-US',
+        name: 'English',
+        file: 'en.json',
+      },
+      {
+        code: 'tr',
+        language: 'tr-TR',
+        name: 'Türkçe',
+        file: 'tr.json',
+      },
+    ],
   },
 });

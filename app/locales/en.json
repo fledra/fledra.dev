@@ -1,0 +1,32 @@
+{
+  "project": "project | projects",
+  "article": "article | articles",
+  "photo": "photo | photos",
+  "aboutMe": "About yours truly",
+  "preview": "See it in action",
+  "showMore": "Show more",
+  "techStack": "Tech Stack",
+  "ohWait": "oh wait...",
+
+  "header": {
+    "hello": "Hi there! I'm",
+    "whoami": "A web dev in the wild",
+    "hidden": "and of course, a thinker and a doer",
+    "hoverMe": "hover me!"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "notYet": "No projects yet"
+  },
+
+  "articles": {
+    "title": "Articles",
+    "notYet": "No articles yet"
+  },
+
+  "photos": {
+    "title": "Photobooth",
+    "notYet": "No photos yet"
+  }
+}
