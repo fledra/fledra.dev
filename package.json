@@ -1,0 +1,40 @@
+{
+  "name": "fledra.dev",
+  "description": "let's say it's a personal playground.",
+  "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@nuxt/ui": "3.0.0-beta.2",
+    "nuxt": "^3.16.0"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.29",
+    "@nuxt/eslint": "^1.1.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "^5.8.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ]
+  }
+}
