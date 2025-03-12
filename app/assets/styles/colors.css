@@ -49,15 +49,15 @@
 }
 
 :root {
-  --ui-bg: var(--color-smoke-200);
-  --ui-text: var(--color-smoke-800);
-  --ui-primary: var(--ui-color-primary-400);
+  --ui-bg: var(--ui-color-neutral-200);
+  --ui-text: var(--ui-color-neutral-800);
+  --ui-primary: var(--ui-color-primary-600);
   --ui-secondary: var(--ui-color-secondary-600);
 }
 
 .dark {
-  --ui-bg: var(--color-smoke-950);
-  --ui-text: var(--color-salt-50);
-  --ui-primary: var(--ui-color-primary-200);
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-text: var(--ui-color-neutral-100);
+  --ui-primary: var(--ui-color-primary-300);
   --ui-secondary: var(--ui-color-secondary-600);
 }

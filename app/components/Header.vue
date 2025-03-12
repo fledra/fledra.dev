@@ -46,6 +46,10 @@
           <UIcon name="i-lucide:github" />
         </ULink>
       </div>
+
+      <div class="flex items-center gap-4">
+        <ColorSwitch class="w-10" />
+      </div>
     </div>
   </header>
 </template>
