@@ -63,7 +63,7 @@ const hovering = ref(false);
 header {
   /* just in case i want the border to have a bevel */
   --edge-bevel: 0px;
-  --edge-width: 2px;
+  --edge-width: 1px;
 
   position: relative;
   isolation: isolate;
@@ -77,7 +77,7 @@ header::after {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: color-mix(in oklch, var(--ui-primary) 60%, transparent);
+  background-color: color-mix(in oklch, var(--ui-primary) 20%, transparent);
   clip-path: polygon(
     calc(100% - var(--edge-width)) 0,
     100% 0%,
