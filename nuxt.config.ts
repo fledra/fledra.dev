@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content'],
+  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/image'],
 
   css: ['~/assets/styles/main.css'],
 
@@ -27,6 +27,12 @@ export default defineNuxtConfig({
   ui: {
     colorMode: true,
     fonts: true,
+  },
+
+  mdc: {
+    components: {
+      prose: true,
+    },
   },
 
   icon: {
