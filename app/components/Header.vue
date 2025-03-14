@@ -41,9 +41,15 @@
         </p>
       </div>
 
-      <div class="flex items-center gap-4 text-xl">
+      <div class="flex items-center gap-8 text-xl">
+        <ULink raw class="text-(--ui-primary) transition-colors hover:text-(--ui-text)" :to="$localePath('/')">
+          <UIcon name="i-lucide:house" />
+        </ULink>
         <ULink class="text-(--ui-primary)" to="https://github.com/fledra" target="_blank" external>
           <UIcon name="i-lucide:github" />
+        </ULink>
+        <ULink class="text-(--ui-primary)" to="mailto:hello@fledra.dev">
+          <UIcon name="i-lucide:mail" />
         </ULink>
       </div>
 
