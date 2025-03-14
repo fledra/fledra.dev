@@ -6,13 +6,15 @@
           {{ $t('header.hello') }}
         </p>
 
-        <div class="absolute top-0 right-[-0.5rem] text-neutral-400 dark:text-neutral-800">
+        <div
+          class="motion-safe:animate-fade-in absolute top-0 right-[-0.5rem] text-neutral-400 opacity-0 dark:text-neutral-800"
+        >
           <p class="w-20 rotate-[-25deg] text-right text-xs">{{ $t('header.hoverMe') }}</p>
           <UIcon name="i-custom:arrow-bend" class="ml-10 rotate-[30deg] text-4xl" />
         </div>
 
         <NuxtLink
-          class="mb-4 text-8xl font-bold"
+          class="motion-safe:animate-back-in-left mb-4 text-8xl font-bold"
           :to="$localePath('/')"
           @mouseenter="hovering = true"
           @mouseleave="hovering = false"
@@ -43,19 +45,19 @@
 
       <div class="flex items-center gap-8 text-xl">
         <ULink raw class="text-(--ui-primary) transition-colors hover:text-(--ui-text)" :to="$localePath('/')">
-          <UIcon name="i-lucide:house" />
+          <UIcon name="i-lucide:house" class="motion-safe:animate-back-in-left" />
         </ULink>
         <ULink class="text-(--ui-primary)" to="https://github.com/fledra" target="_blank" external>
-          <UIcon name="i-lucide:github" />
+          <UIcon name="i-lucide:github" class="motion-safe:animate-fade-in opacity-0" />
         </ULink>
         <ULink class="text-(--ui-primary)" to="mailto:hello@fledra.dev">
-          <UIcon name="i-lucide:mail" />
+          <UIcon name="i-lucide:mail" class="motion-safe:animate-back-in-right" />
         </ULink>
       </div>
 
       <div class="flex items-center gap-4">
-        <ColorSwitch class="w-10" />
-        <LanguageSwitch class="w-10" />
+        <ColorSwitch class="motion-safe:animate-back-in-left w-10" />
+        <LanguageSwitch class="motion-safe:animate-back-in-right w-10" />
       </div>
     </div>
   </header>

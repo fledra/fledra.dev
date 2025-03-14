@@ -3,11 +3,12 @@
 
 @theme {
   --animate-heartbeat: heartbeat 350ms ease-in-out infinite;
-  --animate-back-in-down: backInDown 1200ms ease-in-out;
-  --animate-back-in-left: backInLeft 1200ms ease-in-out;
-  --animate-back-in-right: backInRight 1200ms ease-in-out;
-  --animate-flip-in-x: flipInX 350ms ease-in-out;
-  --animate-flip-out-y: flipOutY 350ms ease-in-out;
+  --animate-back-in-down: backInDown 1200ms ease-in-out forwards;
+  --animate-back-in-left: backInLeft 1200ms ease-in-out forwards;
+  --animate-back-in-right: backInRight 1200ms ease-in-out forwards;
+  --animate-flip-in-x: flipInX 350ms ease-in-out forwards;
+  --animate-flip-out-y: flipOutY 350ms ease-in-out forwards;
+  --animate-fade-in: fadeIn 500ms ease-in-out 700ms forwards;
 
   @keyframes heartbeat {
     0% {
@@ -129,6 +130,15 @@
       -webkit-transform: perspective(400px) rotateY(90deg);
       transform: perspective(400px) rotateY(90deg);
       opacity: 0;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }
