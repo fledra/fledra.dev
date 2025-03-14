@@ -1,5 +1,5 @@
 <template>
-  <div class="border-b border-(--ui-primary)/20 px-8 py-6">
+  <div class="border-b border-(--ui-primary)/20 p-8">
     <component
       :is="!props.disabled && props.to ? ULink : 'div'"
       :to="props.to"
