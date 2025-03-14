@@ -1,18 +1,12 @@
 <template>
-  <div class="w-full">
-    <template v-if="data">
-      <ContentRenderer
-        :value="data"
-        class="prose dark:prose-invert prose-a:no-underline max-w-[unset] p-6 md:p-16 md:pr-12"
-      />
-    </template>
-    <template v-else>
-      <div class="flex h-screen flex-col items-center justify-center">
-        <h1 class="mb-4 text-4xl font-semibold">{{ $t('notFound.heading') }}</h1>
-        <p class="mb-16 text-lg">{{ $t('notFound.text') }}</p>
-        <UButton :to="$localePath('/')" size="xl">{{ $t('notFound.button') }}</UButton>
-      </div>
-    </template>
+  <div v-if="data" class="w-full p-6 md:p-16 md:pr-12">
+    <Breadcrumb />
+    <ContentRenderer :value="data" class="prose dark:prose-invert prose-a:no-underline max-w-[unset]" />
+  </div>
+  <div v-else class="flex h-screen flex-col items-center justify-center">
+    <h1 class="mb-4 text-4xl font-semibold">{{ $t('notFound.heading') }}</h1>
+    <p class="mb-16 text-lg">{{ $t('notFound.text') }}</p>
+    <UButton :to="$localePath('/')" size="xl">{{ $t('notFound.button') }}</UButton>
   </div>
 </template>
 

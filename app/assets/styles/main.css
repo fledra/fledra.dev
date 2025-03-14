@@ -7,4 +7,5 @@
 
 @theme static {
   --font-sans: 'Poppins', sans-serif;
+  --font-mono: 'Fira Code', monospace;
 }

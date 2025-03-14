@@ -7,5 +7,6 @@ some say this will always be a work in progress. and it might be. or maybe, just
 ## The Stack
 
 - 📦 [pnpm](https://pnpm.io)
-- 💚 [Nuxt 3](https://nuxt.com)
-- 🟢 [Nuxt UI 3](https://ui3.nuxt.dev)
+- 💚 [Nuxt](https://nuxt.com)
+- 🟢 [Nuxt UI](https://ui.nuxt.com)
+- 📗 [Nuxt Content](https://content.nuxt.com)
