@@ -1,7 +1,10 @@
 <template>
-  <div class="w-full overflow-x-hidden">
+  <div class="w-full">
     <template v-if="data">
-      <ContentRenderer :value="data" class="prose dark:prose-invert prose-a:no-underline w-full p-6 md:p-16 md:pr-8" />
+      <ContentRenderer
+        :value="data"
+        class="prose dark:prose-invert prose-a:no-underline max-w-[unset] p-6 md:p-16 md:pr-8"
+      />
     </template>
     <template v-else>
       <div class="flex h-screen flex-col items-center justify-center">
