@@ -14,6 +14,13 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
+  nitro: {
+    prerender: {
+      routes: ['/'],
+      crawlLinks: false,
+    },
+  },
+
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/content', '@nuxt/image'],
 
   css: ['~/assets/styles/main.css'],
@@ -27,6 +34,13 @@ export default defineNuxtConfig({
   ui: {
     colorMode: true,
     fonts: true,
+  },
+
+  content: {
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
   },
 
   mdc: {
