@@ -4,3 +4,9 @@
     <CollectionList collection="articles" :title="$t('articles.title')" icon="i-custom:articles" :limit="3" />
   </div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Home',
+});
+</script>

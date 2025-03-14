@@ -21,4 +21,9 @@ const pagination = usePagination({
   pageSize: 10,
   total: count,
 });
+
+const { t } = useI18n();
+useSeoMeta({
+  title: t(`${collection}.title`),
+});
 </script>

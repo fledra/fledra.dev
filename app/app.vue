@@ -9,3 +9,9 @@
     </div>
   </UApp>
 </template>
+
+<script setup lang="ts">
+useHead({
+  titleTemplate: (title) => (title ? `${title} | fledra.dev` : 'fledra.dev'),
+});
+</script>

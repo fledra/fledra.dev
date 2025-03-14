@@ -17,11 +17,10 @@ const route = useRoute();
 const { locale } = useI18n();
 const { data } = await useAsyncData(route.path, async () => {
   const { slug } = route.params;
-
-  if (!Array.isArray(slug) || slug.length !== 2) return '';
-
   const [collection, name] = slug as [keyof Collections, string];
   const stem = `${collection}/${name}.${locale.value}`;
   return queryCollection(collection).where('stem', '=', stem).first();
 });
+
+useSeoMeta(data.value?.seo ?? {});
 </script>
