@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col">
     <CollectionList
-      :collection="collection"
-      title="Articles"
       icon="i-custom:articles"
+      :collection="collection"
+      :title="$t('articles.title')"
       :skip="pagination.skip"
       disabled
     />

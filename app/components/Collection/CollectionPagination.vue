@@ -10,7 +10,9 @@
       size="lg"
     />
 
-    <div class="absolute right-6 flex items-center gap-2">Showing {{ size }} of {{ total }}</div>
+    <div class="absolute right-6 flex items-center text-sm">
+      {{ $t('showing', { n: size, total }) }}
+    </div>
   </div>
 </template>
 

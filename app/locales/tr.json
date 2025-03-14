@@ -2,6 +2,7 @@
   "project": "proje",
   "article": "yazı",
   "photo": "fotoğraf",
+  "showing": "Toplam {total} kayıt",
   "aboutMe": "Kimdir? Nedir?",
   "preview": "Ben de göreyim",
   "showMore": "Daha fazla göreyim",

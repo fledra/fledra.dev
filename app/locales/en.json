@@ -2,6 +2,7 @@
   "project": "project | projects",
   "article": "article | articles",
   "photo": "photo | photos",
+  "showing": "Showing {n} of {total}",
   "aboutMe": "About yours truly",
   "preview": "See it in action",
   "showMore": "Show more",
