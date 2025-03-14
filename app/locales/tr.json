@@ -15,6 +15,12 @@
     "hoverMe": "üzerine gel!"
   },
 
+  "notFound": {
+    "heading": "Buralar ıssız görünüyor",
+    "text": "Seni en iyisi anasayfaya göndereyim",
+    "button": "Hadi gönder"
+  },
+
   "projects": {
     "title": "Projeler",
     "notYet": "Henüz hiç proje yok"

@@ -15,6 +15,12 @@
     "hoverMe": "hover me!"
   },
 
+  "notFound": {
+    "heading": "You look lost",
+    "text": "I can fix that",
+    "button": "Just take me home"
+  },
+
   "projects": {
     "title": "Projects",
     "notYet": "No projects yet"
