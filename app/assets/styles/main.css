@@ -1,4 +1,6 @@
 @import 'tailwindcss' theme(static);
+@plugin "@tailwindcss/typography";
+
 @import '@nuxt/ui';
 @import './colors';
 @import './animate';
