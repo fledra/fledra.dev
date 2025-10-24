@@ -39,6 +39,12 @@ export default defineNuxtConfig({
     },
   },
 
+  mdc: {
+    components: {
+      prose: true,
+    },
+  },
+
   icon: {
     customCollections: [
       {

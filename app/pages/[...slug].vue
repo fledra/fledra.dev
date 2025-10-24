@@ -1,7 +1,10 @@
 <template>
   <div v-if="data" class="w-full p-6 md:p-16 md:pr-12">
     <Breadcrumb />
-    <ContentRenderer :value="data" class="prose dark:prose-invert prose-a:no-underline max-w-[unset]" />
+    <ContentRenderer
+      :value="data"
+      class="prose dark:prose-invert prose-a:no-underline prose-img:w-auto max-w-[unset]"
+    />
   </div>
   <div v-else class="flex h-screen flex-col items-center justify-center">
     <h1 class="mb-4 text-4xl font-semibold">{{ $t('notFound.heading') }}</h1>
