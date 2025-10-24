@@ -2,11 +2,12 @@
   <UTooltip :text="tech.name">
     <NuxtLink v-if="tech" :to="tech.link" target="_blank" external>
       <div
-        class="tech relative isolate flex items-center justify-center overflow-hidden rounded-lg p-4 after:rounded-lg after:bg-(--ui-bg)"
+        class="tech after:bg-accented/90 dark:after:bg-default relative isolate flex items-center justify-center overflow-hidden rounded-lg p-4 after:rounded-lg"
         :class="{
           animate,
           'before:animate-spin': animate,
-          'after:bg-(--ui-bg)/50': animate,
+          'after:bg-default/50': animate,
+          'dark:after:bg-default/50': animate,
         }"
         @mouseenter="animate = true"
         @mouseleave="animate = false"
@@ -43,7 +44,6 @@ const animate = ref(false);
 }
 
 .tech::after {
-  --radius: 0.75rem;
   content: '';
   position: absolute;
   top: 50%;

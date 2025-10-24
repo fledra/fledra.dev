@@ -7,10 +7,10 @@
         </p>
 
         <div
-          class="motion-safe:animate-fade-in absolute top-0 right-[-0.5rem] text-neutral-400 opacity-0 dark:text-neutral-800"
+          class="motion-safe:animate-fade-in absolute top-0 -right-2 text-neutral-400 opacity-0 dark:text-neutral-800"
         >
           <p class="w-20 rotate-[-25deg] text-right text-xs">{{ $t('header.hoverMe') }}</p>
-          <UIcon name="i-custom:arrow-bend" class="ml-10 rotate-[30deg] text-4xl" />
+          <UIcon name="i-custom:arrow-bend" class="ml-10 rotate-30 text-4xl" />
         </div>
 
         <NuxtLink
@@ -26,7 +26,7 @@
           >
             <p
               v-if="hovering"
-              class="from-primary-600 to-secondary-600 dark:to-secondary-600 dark:from-primary-300 bg-gradient-to-r to-85% bg-clip-text text-transparent"
+              class="from-primary-600 to-secondary-600 dark:to-secondary-600 dark:from-primary-300 bg-linear-to-r to-85% bg-clip-text text-transparent"
             >
               Baran
             </p>
@@ -44,13 +44,13 @@
       </div>
 
       <div class="flex items-center gap-8 text-xl">
-        <ULink raw class="text-(--ui-primary) transition-colors hover:text-(--ui-text)" :to="$localePath('/')">
+        <ULink raw class="text-primary hover:text-default transition-colors" :to="$localePath('/')">
           <UIcon name="i-lucide:house" class="motion-safe:animate-back-in-left" />
         </ULink>
-        <ULink class="text-(--ui-primary)" to="https://github.com/fledra" target="_blank" external>
+        <ULink class="text-primary" to="https://github.com/fledra" target="_blank" external>
           <UIcon name="i-lucide:github" class="motion-safe:animate-fade-in opacity-0" />
         </ULink>
-        <ULink class="text-(--ui-primary)" to="mailto:hello@fledra.dev">
+        <ULink class="text-primary" to="mailto:hello@fledra.dev">
           <UIcon name="i-lucide:mail" class="motion-safe:animate-back-in-right" />
         </ULink>
       </div>

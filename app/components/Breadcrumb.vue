@@ -3,7 +3,7 @@
     <span class="text-(--ui-text)/50">$ {{ command }}</span>
     <UBreadcrumb class="" :items="items" :ui="{ list: 'gap-2', linkLabel: 'font-normal text-[1rem]' }">
       <template #separator>
-        <span class="text-(--ui-text)">/</span>
+        <span class="text-default">/</span>
       </template>
     </UBreadcrumb>
   </div>
