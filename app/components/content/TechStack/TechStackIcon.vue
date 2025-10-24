@@ -1,5 +1,5 @@
 <template>
-  <UTooltip :text="tech.name">
+  <UTooltip :text="tech.name" :delay-duration="0" :ui="{ content: 'ring-accented dark:ring-default' }">
     <NuxtLink v-if="tech" :to="tech.link" target="_blank" external>
       <div
         class="tech after:bg-accented/90 dark:after:bg-default relative isolate flex items-center justify-center overflow-hidden rounded-lg p-4 after:rounded-lg"
