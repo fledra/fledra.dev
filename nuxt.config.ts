@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-03-12',
-
-  future: {
-    compatibilityVersion: 4,
-  },
+  compatibilityDate: '2025-07-15',
 
   devServer: {
     port: 1337,
@@ -43,12 +39,6 @@ export default defineNuxtConfig({
     },
   },
 
-  mdc: {
-    components: {
-      prose: true,
-    },
-  },
-
   icon: {
     customCollections: [
       {
@@ -71,10 +61,8 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    lazy: true,
     restructureDir: 'app',
     langDir: 'locales',
-    types: 'composition',
     strategy: 'prefix',
     defaultDirection: 'ltr',
     defaultLocale: 'en',
@@ -82,7 +70,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       useCookie: true,
       cookieSecure: true,
-      cookieKey: 'site_lang',
+      cookieKey: 'site-lang',
       fallbackLocale: 'en',
     },
     locales: [
