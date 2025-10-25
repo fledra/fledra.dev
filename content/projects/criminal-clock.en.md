@@ -20,7 +20,7 @@ shapes all made of individual LEDs.
 
 It looks like this:
 
-![Criminal's wall clock](/images/projects/criminal-clock/clock.jpg){width=450}
+![Criminal's wall clock](/images/projects/criminal-clock/clock.jpg)
 
 This project is basically that clock as a web app. Or site. Whatever you want to call it.
 

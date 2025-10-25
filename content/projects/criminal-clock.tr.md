@@ -20,7 +20,7 @@ Basitçe anlatmak gerekirse 60 tane LED bir daire şeklinde saniyeyi belirtecek 
 
 Şöyle bir saat kendisi:
 
-![Criminal dizisindeki duvar saati](/images/projects/criminal-clock/clock.jpg){width=450}
+![Criminal dizisindeki duvar saati](/images/projects/criminal-clock/clock.jpg)
 
 Bu proje de o saatin web uygulaması hali. Ya da sitesi. Hangisi daha uygunsa işte.
 
