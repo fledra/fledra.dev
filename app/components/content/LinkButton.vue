@@ -18,8 +18,9 @@ interface ContentLinkButtonProps {
   deployment: string;
 }
 
-const { t } = useI18n();
 const props = defineProps<ContentLinkButtonProps>();
+const { t } = useI18n();
+
 const service = ref('');
 const serviceIcon = ref('');
 

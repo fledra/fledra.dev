@@ -10,11 +10,11 @@
 import type { DropdownMenuItem } from '@nuxt/ui';
 
 const { locale: currentLocale, locales, setLocale } = useI18n();
-const items = computed<DropdownMenuItem[]>(() =>
-  locales.value.map<DropdownMenuItem>((locale) => ({
+const items = computed<DropdownMenuItem[]>(() => {
+  return locales.value.map<DropdownMenuItem>((locale) => ({
     label: locale.name,
     active: currentLocale.value === locale.code,
     onSelect: () => setLocale(locale.code),
-  })),
-);
+  }));
+});
 </script>

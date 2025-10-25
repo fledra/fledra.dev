@@ -19,7 +19,7 @@ export interface Tech {
 }
 
 const props = defineProps<{ stack: string[] }>();
-const techs = computed(() => props.stack.map((t) => techList[t]).filter(Boolean) as Tech[]);
+
 const techList: Record<string, Tech> = {
   js: {
     name: 'Javascript',
@@ -167,6 +167,6 @@ const techList: Record<string, Tech> = {
     icon: 'i-logos:adobe-xd',
   },
 };
-</script>
 
-<style scoped></style>
+const techs = props.stack.map((t) => techList[t]).filter(Boolean) as Tech[];
+</script>

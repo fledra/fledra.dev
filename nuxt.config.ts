@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 
   eslint: {
     config: {
-      typescript: true,
+      standalone: false,
     },
   },
 

@@ -39,8 +39,6 @@ export default function usePagination(options: PaginationOptions) {
     const sizes = [5, 10, 20, 50];
     const idx = sizes.findIndex((size) => pageSize.value >= size);
 
-    console.log(pageSize.value, idx);
-
     if (idx !== -1) {
       sizes[idx] = pageSize.value;
     }

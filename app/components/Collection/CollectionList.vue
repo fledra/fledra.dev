@@ -18,6 +18,7 @@
 
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
+
 import type { CollectionRowProps } from './CollectionRow.vue';
 
 interface CollectionListProps extends CollectionRowProps {

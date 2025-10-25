@@ -1,9 +1,9 @@
 {
   "name": "fledra.dev",
   "description": "let's say it's a personal playground.",
-  "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
-  "type": "module",
   "private": true,
+  "type": "module",
+  "author": "Baran D. <baran@fledra.dev> (https://fledra.dev)",
   "scripts": {
     "prepare": "husky",
     "dev": "nuxt dev",
@@ -19,13 +19,14 @@
     "@nuxt/image": "1.11.0",
     "@nuxt/ui": "^4.1.0",
     "@nuxtjs/i18n": "10.1.1",
-    "nuxt": "^4.1.3"
+    "nuxt": "^4.2.0"
   },
   "devDependencies": {
-    "@iconify-json/devicon": "^1.2.19",
-    "@iconify-json/logos": "^1.2.4",
-    "@iconify-json/lucide": "^1.2.29",
-    "@iconify-json/vscode-icons": "^1.2.16",
+    "@fledra/eslint-config": "^2.4.0",
+    "@iconify-json/devicon": "^1.2.45",
+    "@iconify-json/logos": "^1.2.9",
+    "@iconify-json/lucide": "^1.2.71",
+    "@iconify-json/vscode-icons": "^1.2.33",
     "@nuxt/eslint": "^1.9.0",
     "@tailwindcss/typography": "^0.5.19",
     "eslint": "^9.38.0",
