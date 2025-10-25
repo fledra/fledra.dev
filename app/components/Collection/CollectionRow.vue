@@ -3,8 +3,8 @@
     <component
       :is="!props.disabled && props.to ? ULink : 'div'"
       :to="props.to"
-      :class="{ 'hover:text-(--ui-primary)': !props.disabled && props.to }"
-      class="flex w-fit gap-6 text-(--ui-text)"
+      :class="{ 'hover:text-primary': !props.disabled && props.to }"
+      class="text-default flex w-fit gap-6"
     >
       <UIcon v-if="props.icon" :name="props.icon" :customize="customizeIcon" class="h-7 w-7 transition-colors" />
 
@@ -12,7 +12,7 @@
         <span class="text-xl font-semibold transition-colors">
           {{ props.title }}
         </span>
-        <span v-if="props.description" class="text-xs text-(--ui-text-toned) dark:text-(--ui-text-muted)/50">
+        <span v-if="props.description" class="text-toned text-xs dark:text-(--ui-text-muted)/50">
           {{ props.description }}
         </span>
       </div>
