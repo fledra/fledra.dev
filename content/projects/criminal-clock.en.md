@@ -2,9 +2,10 @@
 date: '2024-07-13'
 stack: ['ts', 'vue', 'vuetify', 'scss', 'vercel']
 deployment: 'https://clock.fledra.dev'
+repo: 'https://github.com/fledra/criminal-clock'
 ---
 
-# Criminal Clock :preview-button{:to="deployment"}
+# Criminal Clock :link-button{:deployment="deployment" :repo="repo"}
 
 A simple digital-ish clock inspired by the show Criminal UK/Germany/Spain/France
 
@@ -20,7 +21,7 @@ shapes all made of individual LEDs.
 
 It looks like this:
 
-![Criminal's wall clock](/images/projects/criminal-clock/clock.jpg)
+![Criminal's wall clock](/images/projects/criminal-clock/clock.jpg){width=450}
 
 This project is basically that clock as a web app. Or site. Whatever you want to call it.
 

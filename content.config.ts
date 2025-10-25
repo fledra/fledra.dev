@@ -9,6 +9,7 @@ const commonSchema = z.object({
 
 const projectSchema = commonSchema.extend({
   stack: z.array(z.string()).nonempty(),
+  repo: z.string().url().optional(),
   deployment: z.string().url().optional(),
 });
 

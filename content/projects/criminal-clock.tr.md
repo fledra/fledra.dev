@@ -2,9 +2,10 @@
 date: '2024-07-13'
 stack: ['ts', 'vue', 'vuetify', 'scss', 'vercel']
 deployment: 'https://clock.fledra.dev'
+repo: 'https://github.com/fledra/criminal-clock'
 ---
 
-# Criminal Clock :preview-button{:to="deployment"}
+# Criminal Clock :link-button{:deployment="deployment" :repo="repo"}
 
 Criminal UK/Germany/Spain/France dizilerinden esinlenilmiş dijitalimsi bir saat.
 
@@ -20,7 +21,7 @@ Basitçe anlatmak gerekirse 60 tane LED bir daire şeklinde saniyeyi belirtecek 
 
 Şöyle bir saat kendisi:
 
-![Criminal dizisindeki duvar saati](/images/projects/criminal-clock/clock.jpg)
+![Criminal dizisindeki duvar saati](/images/projects/criminal-clock/clock.jpg){width=450}
 
 Bu proje de o saatin web uygulaması hali. Ya da sitesi. Hangisi daha uygunsa işte.
 
